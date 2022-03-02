@@ -38,6 +38,7 @@ elif [ $type == 'push' ];then
     git add .
     git commit -m 'update'
     git push
+    delete_docs
 elif [ $type == 'help' ];then
     echo '支持命令 serve-启动本地服务 push-打包并发布到github'    
 else
